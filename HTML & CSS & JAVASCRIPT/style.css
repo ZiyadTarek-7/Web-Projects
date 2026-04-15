@@ -1,0 +1,154 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #441752, #8174a0, #a888b5, #efb6c8);
+}
+h1 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 5.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 40px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.player0,
+.player1 {
+  width: 400px;
+  height: 600px;
+  background-color: #ffcbdc;
+  /* opacity: 50%; */
+  border-radius: 20px;
+}
+.turnstyled {
+  width: 400px;
+  height: 600px;
+  background-color: #ff77a2;
+  border-radius: 20px;
+}
+.players {
+  font-family: "Permanent Marker", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10px;
+}
+.topscore {
+  font-family: "Permanent Marker", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-top: 30px;
+}
+.topscorevalue {
+  font-family: "Permanent Marker", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10px;
+}
+.currentscore {
+  font-family: "Permanent Marker", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 170px;
+}
+.currentscorecontainer {
+  display: flex;
+  justify-content: center;
+}
+.scorecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  background-color: #b14769;
+  border-radius: 20px;
+}
+.currentscorevalue {
+  font-family: "Permanent Marker", sans-serif;
+  color: white;
+  font-size: 3.5rem;
+}
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: #b14769;
+  border: none;
+}
+.btn:hover {
+  background-color: #ff0051;
+}
+.rolldice {
+  left: 50%;
+  top: 540px;
+  transform: translateX(-50%);
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 1.25rem;
+}
+.hold {
+  left: 50%;
+  top: 600px;
+  transform: translateX(-50%);
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 1.25rem;
+}
+.reset {
+  left: 50%;
+  top: 660px;
+  transform: translateX(-50%);
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 1.25rem;
+}
+/* .dicecontainer {
+  display: flex;
+  margin-top: 90px;
+} */
+.dice {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+#firstdice {
+  left: 50%;
+  top: 300px;
+  transform: translateX(-50%);
+}
+#seconddice {
+  left: 50%;
+  top: 400px;
+  transform: translateX(-50%);
+}
+#winner-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#winner-message {
+  color: white;
+  font-size: 3rem;
+  background: #222;
+  padding: 30px 50px;
+  border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
